@@ -1,0 +1,60 @@
+<html lang="en">
+
+  <head>
+    <script src="https://kit.fontawesome.com/3c86a84a5f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+
+    <nav data-toggled="false" data-transitionable="false">
+        <div id="nav-logo-section" class="nav-section ">
+          <a href="index.html">
+            <i class="fa-solid fa-star"></i>
+          </a>
+        </div>
+        <div id="nav-mobile-section">
+          <div id="nav-link-section" class="nav-section">
+            <A href="About.html">ABOUT</A>
+            <A href="Work.html">WORK</A>
+          </div>
+          <div id="nav-social-section" class="nav-section">
+
+
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=447868205882">
+              <i class="fa-brands fa-whatsApp"></i>
+            </a>
+
+              <a target="_blank" href="https://github.com/AbdullahTayeh?tab=repositories" >
+              <i class="fa-brands fa-gitHub"></i>
+            </a>
+
+              <a target="_blank" href="https://www.linkedin.com/in/abta/">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+          <div id="nav-contact-section" class="nav-section">
+            <a href="#">GET IN TOUCH</a>
+          </div>
+        </div>
+        <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+          <span>Menu</span>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+      <main>
+<section>
+  <div class="myfirstmonth myfirstweek-section"></div>
+  <h4>cisco learning</h4>
+<img class="image2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAC6CAMAAABoQ1NAAAAAY1BMVEX///8CvOoAuekAuuma3vQAt+ns+v37//960/HX8Po2w+xJye646fi/6/kWwOvm+P2r4/az5ff0/P6l3/XL7/qL2vNZzO9mz/Db8/uf4PUmw+yN2/N50vGW2vPF7PmA1vJOzO8Qb2qEAAAHD0lEQVR4nO2dbZuiIBSGA1JTy8wx32ar/f+/cjFBebOa0crZee4Ps9cFBPiIcM4B3dUKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/Fz8Kpu7yqDy567yRfgF9dh63jpr4tH4ZwoSUUKIV89ZZe0xQlg0Z5WvYteqQVgyZ50Ja+ukuznrfBHrqxyEzTi0/asahM78BL4EyKEBOTQghwbk0IAcGpBDA3JoQA4NyKHxm+XYNl5jeBIjchwJLfePVLkvKDnqSSNy7Hjjh6/2+Jl8ck+TGc6rW46EpzLvAT32rfNKGy3NLUd9bdxQ7p2IbrJATXTKcejc3PJ+nWXnvGp33SlH0LVDlxMFOYsehWqiU44Ne9DrDzpfnl3URKccoWh8O+EC5mX3sBx/hBzB6g5Sjo2a+N/JsYEcaiLkgBxXIMevlGN7So3dpMlyVOtTrqdMliNLT68QyG8opUzv/FQ5jh6lnmZhTJYjZLybzfNNs6LtEmNa2kQ5zl6b6GnXM1UOdu1m8dWr+yqZ1zV+VhMnyiHscc1ynyiHsJO92feIDfZCjlRNnChH3CXGatpEOVIhx0O+8wQghwbk0IAcGpBDA3JoQA6NiXI4wz//gRwuo+e7wcGC2nKsvhwc1AL5hxfJIbqpt5N11/NI6PiqphE67krSTy2xM1W9B0LHrDNqtXa6uzbvSSwnZ4/aYfzaY4x52gM0srEQU16SGK5VwxMp0d06n5djNDbSHHKs0mvjxt7L0WOEeufV08ljZm/y7GISG22PbDt9JqQ0Hc3gkpCN6V74JUk+jST3ttM5JpF1eu7QsDg3E9/Ib96UdAA5NCCHxjPkoD9XDmEJkbtR4scJiMMG/CFktB3adHO/5ONsWokZfXaM6ynkjFIvnnFw8OERe1bc+scQpOvZe56vD7MKDAAAAAAAAAC/E393KuMoisuPXPXA847QKn64FFEUFZt65zu9sv32WMTXAqEr39+eeHZcnM5L9PfPcXsai123A6i6Z5Jwn5x7+saL82EhCrfFPfvIfpBGvICsj1iB8nMhstu/5dJc/jyiXRyzQ91LjBxbjqsLpUpxap3h2iZafdTYycgbT8umcfWUy/omF63z9+UoqV7ckCMrjPoMOU5Gdhshm/VLENMoqNm723J8GuUNOfzGrE+XozSzW4yDmG/E7t5tOfy+/PXZZ4YcmaWGLscflxq8zEL0OKrdY9Y5BFsOseXAR3gSl0WcME97kgpm1afKsfbUbHV8LCLAHg5q8PmxaRL+D70pRyzeFUvEguDn6oWkw9i51kfaxWOQo9Ky2zZ7Sebc0vk2sewOZceqNRCyak2UldOWQ5Z3rgZZf8cpqa/HJvzwwgY5huaStM3e1/0PHnnF7tnk8m5pnyhSrtSSI5A/cN7Mj76+zWB8Bf1xkn4sKoeU+7mLPv10y1024t4YhsXA6OhgzrkvEvWNzIwbV/ZG6GGcmHkDQT9Ux0xlW45GXpJ5JISzl9OsW11xZMz8OpQ79Q3ImW18G9mWo1+KWvvaML/lRErddnflzt7J5HdPplvZkdHH1pZjr6zMXJGj6qCd5Kpzszkzu5+OLEfxxdTu/ik4rFLNdOArkjJCSnGEY+RNFDHRMnMjXKw3b9/bl3KMP7Uun+Wi6aF+ek7IYV2vQMpxMtLFDPt2z+V7cvApQrO0hyN+Uo4RE0LKYX6AYCly9DbkaAzGKccq4y7+oAgjMv0i5BhZtkVz7K+RLh+Wd3+3QppF45OYWw7OthwM7P4Ucy0XWre8Z5mtx8cydq8XL8KXVtiogTwqB18QDon8+R+RJI3ckWEvmzOGQS/iuxfawYocuzE35Fj17iuT3y2R93ns6RPNMS27vydjlvHr6L11MmJ53JajMhdqGUqi7mNUchxQZe7O+lvy7nVWsamYEt/1lRcaHpOj/6rNua+vGcZb3huh/ejpwwOrPOnn5AXE1Dd9Z2iTVnt/H9Ylvengq8NIPCzKD6L+gml8qPb7ardulBcXLoOFH6dhFX4MQetFnDcdAhRtQKbbV7gdDSNJWe/4he7Pn4k9zJVwUltfuyuhhn+kE9dlUzX6o3836V3sNIuq69ltOVh3Icq1qK9Dm4Floi8koZ0tCi1kc6G2OnhPDutKNCtzY9WnraupZ2Z3ii7mC8ipue/xRTmMt3hMl8Y0M6zm2voX9DmTdnLXevg1Oew1NWU3t53CxBg/jEYLeVI6gjVRBGF6JP3KmByMuj4t72+YKrBn+CLBUW8uWcKaohEcCuKJCTIpVLuDJBzyd0gpEtrD4tptLPh1JCdcj8SWyRuksWiO524XeS47C7fpx0d61s8nBFnAyQItqdrxkrxsfstwyvJrfduR/6khq3j2aC4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBS+AdjzU5gZOXL+wAAAABJRU5ErkJggg==">
+
+<div class="mysecondmonth myfirstweek-section"></div>
+<h4>TeamCity: the Hassle-Free CI/CD Tool by JetBrains</h4>
+<img class="image3" src="https://resources.jetbrains.com/storage/products/teamcity/img/meta/teamcity_1280x800.png">
+
+<div class="mythirdmonth myfirstweek-section"></div>
+<h4>New Relic Application Performance Monitoring Extention</h4>
+<img class="image4" src="https://grafana.com/static/assets/img/blog/newrelic_plugin1.png">
+
+
+</section>
+
+</main>
+  </head>
