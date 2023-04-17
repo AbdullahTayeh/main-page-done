@@ -8,7 +8,7 @@ const handleLeftClick = () => {
   const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : slides.length - 1;
   
   const currentSlide = document.querySelector(`[data-index="${activeIndex}"]`),
-        nextSlide = document.querySelector(`[data-index="${nextIndex}"]`);
+    nextSlide = document.querySelector(`[data-index="${nextIndex}"]`);
         
   currentSlide.dataset.status = "after";
   

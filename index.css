@@ -1,22 +1,65 @@
 :root {
-  --background-color: rgb(32, 32, 34);
-  --border-color: rgb(255, 255, 255, 0.1);
+  --background-color: rgb(3, 13, 45);
+  --border-color: rgba(255, 255, 255, 0.2);
   --highlight-color: rgb(126, 87, 194);
   --navbar-color: rgb(190, 190, 245);
+}
+#cardabout{
+  width: 950;
+  height: 700px;
+  aspect-ratio: 2/3;
+  border: 0.1rem solid var(--border-color)
+}
+#cardabout > img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 2/2.5;
+}
+
+#details-mybackground-section {
+  height: 200px;
+  border: 0.1rem solid var(--border-color);
+}
+#card {
+  width: 650px;
+  height: 950px;
+  aspect-ratio: 2/2.5;
+  border: 0.02rem solid var(--border-color);
+}
+#card >img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 2/3;
+}
+@keyframes pulse {
+  from, to {
+    scale: 1;
+  }
+  50% {
+    scale: 1.13;
+  }
 
 }
-.image1{
-  max-width: 100%;
-
+#card:hover > img {
+  animation: pulse 5000ms ease-in-out;
+  overflow: hidden;
 }
 
-main > section{
+main > article {
+  display: grid;
+  height: 100%;
+}
+
+
+/* main > section{
   text-align: right;
   font-size: 44px;
   margin-bottom: 14px;
   text-align: start;
   overflow-y: auto;
-}
+} */
 
 body {
   background-color: var(--background-color);
@@ -24,8 +67,7 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0px;
-  overflow-y: auto;
-
+  overflow-y: hidden;
   
 }
 
@@ -34,7 +76,7 @@ body {
 }
 
 h1, h2, h3, a, p, span {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Londrina Solid', cursive;
   font-weight: 400;
   color: white;
   margin: 0px;
@@ -104,7 +146,8 @@ nav .nav-section {
 #nav-social-section,
 #nav-contact-section {
   flex-grow: 1;
-
+  font-size: 40px;
+  
 }
 
 #nav-logo-section {
@@ -122,6 +165,7 @@ nav .nav-section {
 #nav-link-section {
   flex-basis: 50%;
   gap: 6rem; 
+  font-size: 40px;
 }
 
 #nav-social-section  {
@@ -133,8 +177,8 @@ nav .nav-section {
 main {
   flex-grow: 1;
   position: relative;
-  overflow-y: auto;
-}
+  overflow-y: hidden;
+} 
 
 @media(max-width: 1200px) {    
   #nav-mobile-section {
@@ -151,7 +195,7 @@ main {
   }
 
   
-@media(max-width: 800px) {  
+@media only screen and(max-width: 800px) {  
   nav {
     justify-content: space-between;  
     
@@ -224,6 +268,8 @@ main {
     flex-basis: 70%;
     font-size: 1.75em; 
     line-height: 1.5rem;
+    font-family: 'Londrina Solid', cursive;
+
   }
   
   main > article > .article-title-section > i {
@@ -241,7 +287,7 @@ main {
   }
 }
   main {
-    overflow-y: auto;
+    overflow-y: hidden;
   }
   
   main > article {
@@ -253,10 +299,15 @@ main {
   main > article > .article-title-section > h2 {
     font-size: 3rem; 
     line-height: 2.6rem;
+    font-family: 'Londrina Solid', cursive;
+    
+
   }
   
   main > article > .article-title-section > i {
     font-size: 3rem; 
+    font-family: 'Londrina Solid', cursive;
+
   }
   
   main > article > .article-description-section,
@@ -357,26 +408,118 @@ main > article:nth-child(4) > .article-image-section {
   background-image: url('./svelte-prisma-min_jntqkh.png')
 }
 
+main > article:first-child > .article-title-section > h1 {
+  font-size: 44px;
+  margin-bottom: 0px;
+  color: white;
+
+}
+main > article:first-child > .article-title-section > i {
+  font-size: 44px;
+
+color: white;
+
+}
+main > article:first-child > .article-nav-section > button {
+  font-size: 44px;
+  color: white;
+}
 main > article:first-child > .article-description-section > h1 {
   font-size: 44px;
   margin-bottom: 120px;
-  
+  color: white;
+}
+main > article:first-child > .article-description-section > h1 > a {
+  font-size: 44px;
+  margin-bottom: 120px;
+}
+
+main > article:nth-child(2) {
+max-width: 100%;
+
+}
+main > article:nth-child(2) > .article-title-section > h1 {
+  font-size: 44px;
+  margin-bottom: 0px;
+color: white;
+
+}
+main > article:nth-child(2) > .article-title-section > i {
+  font-size: 44px;
+  color: white;
+
+}
+main > article:nth-child(2) > .article-nav-section > button {
+  font-size: 44px;
+  color: white;
 }
 
 main > article:nth-child(3) > .article-description-section > p{
   font-size: 44px;
   margin-top: 15px;
+  color: white;
+}
+main > article:nth-child(3) > .article-description-section > p > a{
+  font-size: 44px;
+  margin-top: 15px;
+  color: rgb(187, 83, 83);
+  text-decoration-line: underline;
+}
+a:hover{
+  color: var(--highlight-color);
+}
+main > article:nth-child(3) > .article-title-section > h2{
+  font-size: 44px;
+  margin-top: 15px;
+  color: white;
+}
+main > article:nth-child(3) > .article-title-section > i{
+  font-size: 44px;
+  margin-top: 15px;
+  color: white;
+}
+main > article:nth-child(3) > .article-nav-section > button{
+  font-size: 44px;
+  margin-top: 15px;
+  color: white;
+}
 
+
+
+main > article:nth-child(4) > .article-title-section > h2{
+  font-size: 60px;
+  margin-top: 15px;
+  color: white;
+}
+main > article:nth-child(4) > .article-title-section > i{
+  font-size: 80px;
+  margin-top: 15px;
+  color: white;
+}
+main > article:nth-child(4) > .article-title-section > i{
+  font-size: 80px;
+  margin-top: 15px;
+  color: white;
+}
+main > article:nth-child(4) > .article-nav-section > button{
+  font-size: 80px;
+  margin-top: 15px;
+  color: white;
 }
 main > article:nth-child(4) > .article-description-section > h2{
-  font-size: 40px;
-  margin-top: 15px;
-}
-main > article:nth-child(4) > .article-description-section > p{
-  font-size: 20px;
+  font-size: 44px;
   margin-bottom: 0px;
+  
 
 }
+main > article:nth-child(4) > .article-description-section > h2 > a{
+  font-size: 44px;
+  margin-bottom: 0px;
+  color: rgb(187, 83, 83);
+  text-decoration-line: underline;
+  
+}
+
 main > article > .article-image-section {
   background-position: center;
   background-size: cover;
@@ -411,7 +554,8 @@ main > article > .article-title-section * {
 
 main > article > .article-title-section > h2 {
   flex-basis: 50%;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Londrina Solid', cursive;
+
   font-size: 3.5rem;
   line-height: 3rem;
   margin: 0px;
@@ -429,7 +573,6 @@ main > article > .article-nav-section > .article-nav-button {
   border: none;
   outline: none;
   color: rgba(255, 255, 255, 0.75);
-  
   font-size: 3rem;
   cursor: pointer;
 }
